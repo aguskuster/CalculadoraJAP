@@ -12,11 +12,16 @@ body{
     height: 500px; 
     border-radius: 25px;
     border: solid 3px;
+    border-style: double 3px;
+    animation-name: anim1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
 }
 
 
 .calculadora td button {
-   
+    
     display: block;
     width: 60px;
     height: 60px;
@@ -37,4 +42,62 @@ body{
     overflow-y:scroll;
     border: solid black 1px;
 
+    animation-name: anim2;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+   
+}
+
+@keyframes anim1 {
+
+    0%{
+        border-radius: 60px;
+        background-color: blue;
+    }
+    25%{
+        border-radius: 20px;
+        background-color: violet;
+    }
+
+    50%{
+        border-radius: 120px;
+        background-color: red;
+    }
+    75%{
+        border-radius: 20px;
+        background-color: green;
+    }
+
+    100%{
+        border-radius: 60px;
+        background-color: yellow;
+    }
+   
+}
+
+@keyframes anim2 {
+
+    0%{
+        border-radius: 60px;
+        
+    }
+    25%{
+        border-radius: 20px;
+        
+    }
+
+    50%{
+        border-radius: 120px;
+        
+    }
+    75%{
+        border-radius: 20px;
+        
+    }
+
+    100%{
+        border-radius: 60px;
+        
+    }
+   
 }
